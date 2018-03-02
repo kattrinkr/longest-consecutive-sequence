@@ -37,6 +37,7 @@ module.exports = function longestConsecutiveLength(array) {
       max = temp[i];
     }
   }
+  if ((max === 0) && (array.length !== 0)) return 1;//Если нет последов-ей
 
   return max;
 }
